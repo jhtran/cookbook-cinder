@@ -101,6 +101,8 @@ default["cinder"]["syslog"]["facility"] = "LOG_LOCAL2"
 default["cinder"]["syslog"]["config_facility"] = "local2"
 
 default["cinder"]["api"]["ratelimit"] = "True"
+default["cinder"]["cron"]["enabled"] = false
+default["cinder"]["cron"]["minute"] = '00'
 
 default["cinder"]["volume"]["state_path"] = "/var/lib/cinder"
 default["cinder"]["volume"]["volume_driver"] = "cinder.volume.driver.ISCSIDriver"
